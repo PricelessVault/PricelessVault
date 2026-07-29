@@ -1,46 +1,37 @@
 export default function Features() {
   const features = [
     {
-      title: "AI Vocal Presets",
-      description:
-        "Create professional vocal chains with AI-powered presets designed for modern artists.",
+      title: "Studio Grade Vocal Chains",
+      text: "Professional vocal presets designed for modern recording workflows."
     },
     {
-      title: "Studio Quality",
-      description:
-        "Premium processing workflows inspired by industry recording environments.",
+      title: "Instant Preset Vault",
+      text: "Access your premium vocal templates anytime, anywhere."
     },
     {
-      title: "Instant Access",
-      description:
-        "Save, organize, and access your favorite vocal settings anywhere.",
-    },
+      title: "AI Vocal Intelligence",
+      text: "Future-ready tools to analyze and enhance your sound."
+    }
   ];
 
   return (
-    <section className="px-6 py-24 max-w-7xl mx-auto">
-      <div className="text-center mb-16">
-        <p className="text-sm uppercase tracking-[0.3em] text-zinc-400">
-          Powerful Tools
-        </p>
-
-        <h2 className="mt-4 text-4xl md:text-6xl font-bold">
-          Built For The Future Of Sound
-        </h2>
-      </div>
+    <section className="px-8 py-24 max-w-7xl mx-auto">
+      <h2 className="text-4xl font-bold text-center mb-16">
+        Built For The Next Generation Of Artists
+      </h2>
 
       <div className="grid md:grid-cols-3 gap-8">
-        {features.map((feature) => (
+        {features.map((item) => (
           <div
-            key={feature.title}
+            key={item.title}
             className="rounded-3xl border border-zinc-800 bg-zinc-950 p-8"
           >
-            <h3 className="text-2xl font-semibold">
-              {feature.title}
+            <h3 className="text-xl font-semibold mb-4">
+              {item.title}
             </h3>
 
-            <p className="mt-4 text-zinc-400">
-              {feature.description}
+            <p className="text-zinc-400">
+              {item.text}
             </p>
           </div>
         ))}
